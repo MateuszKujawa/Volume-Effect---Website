@@ -1,0 +1,6 @@
+1. Ogarnięcie tych varów jebanych żeby font sie zmienił i kolor
+2. Ogarnięcie buttonów
+3. Dodanie własnych styli, animacji itd
+4. Dodanie karuzeli + galerii
+5. Dodanie napisów w miare ogarniętych
+6. Powiększenie cennika
