@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,16 +11,25 @@
     <meta name="author" content="frontend.mkujawa">
     <meta name="keywords" content="hairsaloon, salon fryzjerski, fryzjer, fryzjer słupca, słupca, monika kujawa, kujawa monika, fryzjer monika, fryzjer monika słupca">
 
-    <!-- CSS/STYLES/LINKS -->
-    <link rel="stylesheet" href="css/style.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/bootstrap-icons.css" rel="stylesheet">
 
     <!-- FONT'S -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;500&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@200;300;400;700&display=swap" rel="stylesheet">
     
+    <!-- CSS/STYLES/LINKS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link href="css/style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/lightbox.css">
+
+    <script src="https://unpkg.com/scrollreveal"></script>
     
 <!--
 *** Frontend.mkujawa *** 
@@ -55,11 +64,15 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="#section_4" class="nav-link click-scroll">Cennik</a>
+                            <a href="#section_4" class="nav-link click-scroll">Galeria</a>
                         </li>
 
                         <li class="nav-item">
-                            <a href="#section_5" class="nav-link click-scroll">Kontakt</a>
+                            <a href="#section_5" class="nav-link click-scroll">Cennik</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#section_6" class="nav-link click-scroll">Kontakt</a>
                         </li>
                     </ul>
                 </div>
@@ -72,11 +85,11 @@
                     <div class="container">
                         <div class="row">
 
-                            <div class="col-lg-8 col-12">
+                            <div class="main-baner col-lg-8 col-12">
                                 <h1 class="text-white mb-lg-3 mb-4">
-                                    <strong>Volume <em>Effect</em></strong>
+                                    <strong>Volume Effect</strong>
                                 </h1>
-                                <p class="text-black">Piękno tkwi we włosach...</p>
+                                <p class="text-white">Piękno tkwi we włosach...</p>
                                 <br>
                                 <a class="btn custom-btn custom-border-btn custom-btn-bg-white smoothscroll me-2 mb-2" href="#section_2">O nas</a>
                                 
@@ -93,7 +106,7 @@
                             <strong class="text-white">Odwiedź nas!</strong>
                         </h4>
 
-                        <a href="#section_5" class="smoothscroll btn custom-btn custom-btn-italic mt-3">Kontakt do nas</a>
+                        <a href="#section_5" class="smoothscroll btn custom-btn custom-btn mt-3">Kontakt</a>
                     </div>
                 </section>
 
@@ -102,21 +115,21 @@
                         <div class="row">
                             
                             <div class="col-lg-12 col-12 mx-auto">
-                                <h2 class="mb-4">O nas</h2>
+                                <h2 class="mb-4 onas-title">O nas</h2>
 
                                 <div class="border-bottom pb-3 mb-5">
-                                    <p>Nasz salon jest super i ogólnie to fajnie obcinamy, modelujemy i spełniamy życzenia klienta. Wpadnij do nas a na pewno nie będziesz żałować!</p>
+                                    <p class="onas-desc">Nasz salon jest super i ogólnie to fajnie obcinamy, modelujemy i spełniamy życzenia klienta. Wpadnij do nas a na pewno nie będziesz żałować!</p>
                                 </div>
                             </div>
 
-                            <h6 class="mb-5">Nasi klienci</h6>
+                            <h6 class="mb-5 stylizacje">Nasze stylizacje</h6>
 
-                            <div class="col-lg-5 col-12 custom-block-bg-overlay-wrap me-lg-5 mb-5 mb-lg-0">
-                                <img src="images/bg_2_edit.jpg" class="custom-block-bg-overlay-image img-fluid" alt="zdjęcie klient 1">
+                            <div class="col-lg-5 col-12 custom-block-bg-overlay-wrap me-lg-5 mb-5 mb-lg-0 two-images">
+                                <img src="images/galeria/6.jpg" class="custom-block-bg-overlay-image img-fluid" alt="zdjęcie klient 1">
                             </div>
 
-                            <div class="col-lg-5 col-12 custom-block-bg-overlay-wrap mt-4 mt-lg-0 mb-5 mb-lg-0">
-                                <img src="images/bg_3_edit.jpg" class="custom-block-bg-overlay-image img-fluid" alt="zdjęcie klient 2">
+                            <div class="col-lg-5 col-12 custom-block-bg-overlay-wrap mt-4 mt-lg-0 mb-5 mb-lg-0 two-images">
+                                <img src="images/galeria/img_6.jpg" class="custom-block-bg-overlay-image img-fluid" alt="zdjęcie klient 2">
                             </div>
 
                         </div>
@@ -130,11 +143,11 @@
                         <div class="row">
 
                             <div class="col-lg-10 col-12 mx-auto">
-                                <h2 class="mb-3">Zapraszamy do nas!</h2>
+                                <h2 class="mb-3 zapraszamy">Zapraszamy do nas!</h2>
 
-                                <p>Słuchamy naszych klientów i staramy się aby byli zadowoleni. Działamy zawsze na 110%</p>
+                                <p class="opis-zapraszamy">Słuchamy naszych klientów i staramy się aby byli zadowoleni. Działamy zawsze na 110%</p>
 
-                                <strong>Przyjdz i sprawdź sam/sama!</strong>
+                                <strong class="strong-zapraszamy">Przyjdz i sprawdź sam/sama!</strong>
                             </div>
 
                         </div>
@@ -146,7 +159,7 @@
                         <div class="row">
 
                             <div class="col-lg-12 col-12">
-                                <h2 class="mb-5">Usługi</h2>
+                                <h2 class="mb-5 uslugi-title">Usługi</h2>
                             </div>
 
 
@@ -181,7 +194,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-lg-6 col-12">
+                            <div class="col-lg-6 col-12 mb-4">
                                 <div class="services-thumb">
                                     <img src="images/stylizacja_uslugi.jpg" class="services-image img-fluid" alt="zdjęcie stylizacji">
 
@@ -191,25 +204,71 @@
                                 </div>
                             </div>
 
+                            <div class="col-lg-6 col-12 mb-4">
+                                <div class="services-thumb">
+                                    <img src="images/regeneracja_uslugi.jpg" class="services-image img-fluid" alt="zdjęcie stylizacji">
+
+                                    <div class="services-info d-flex align-items-end">
+                                        <h4 class="mb-0">Regeneracja</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-12">
+                                <div class="services-thumb">
+                                    <img src="images/prostowaniekeratynowe_uslugi.jpg" class="services-image img-fluid" alt="zdjęcie stylizacji">
+
+                                    <div class="services-info d-flex align-items-end">
+                                        <h4 class="mb-0">Keratynowe prostowanie</h4>
+                                    </div>
+                                </div>
+                            </div>
+
 
                         </div>
                     </div>
                 </section>
 
-                <section class="galery-section section-padding" id="galery-section">
-                    <div class="container">
-                        <div class="row">
 
-                            <!-- 
-                                *!* Tutaj dodać karuzele ze zdjęciami *!* 
-                            -->
-
+                <section class="galery-section section-padding" id="section_4">
+                    <div class="row">
+                        <div class="col-lg-12 col-12">
+                            <h2 class="mb-5 text-center">Galeria</h2>
+                        </div>
+    
+                        <div class="container">
+                            <div class="gallery">
+                                <a href="images/galeria/1.jpg" data-lightbox="models" data-title="Caption1">
+                                    <img src="images/galeria/1.jpg">
+                                </a>
+                                <a href="images/galeria/2.jpg" data-lightbox="models" data-title="Caption1">
+                                    <img src="images/galeria/2.jpg">
+                                </a>
+                                <a href="images/galeria/3.jpg" data-lightbox="models" data-title="Caption1">
+                                    <img src="images/galeria/3.jpg">
+                                </a>
+                                <a href="images/galeria/4.jpg" data-lightbox="models" data-title="Caption1">
+                                    <img src="images/galeria/4.jpg">
+                                </a>
+                                <a href="images/galeria/5.jpg" data-lightbox="models" data-title="Caption1">
+                                    <img src="images/galeria/5.jpg">
+                                </a>
+                                <a href="images/galeria/6.jpg" data-lightbox="models" data-title="Caption1">
+                                    <img src="images/galeria/6.jpg">
+                                </a>
+                                <a href="images/galeria/7.jpg" data-lightbox="models" data-title="Caption1">
+                                    <img src="images/galeria/7.jpg">
+                                </a>
+                                <a href="images/galeria/8.jpg" data-lightbox="models" data-title="Caption1">
+                                    <img src="images/galeria/8.jpg">
+                                </a>
+                            </div>   
                         </div>
                     </div>
                 </section>
 
 
-                <section class="price-list-section section-padding" id="section_4">
+                <section class="price-list-section section-padding" id="section_5">
                     <div class="container">
                         <div class="row">
 
@@ -221,7 +280,7 @@
 
                                     <div class="price-list-thumb">
                                         <h6 class="d-flex">
-                                            Strzyżenie
+                                            Strzyżenie męskie od...
                                             <span class="price-list-thumb-divider"></span>
                                             <strong>30.00 zł</strong>
                                         </h6>
@@ -229,15 +288,15 @@
 
                                     <div class="price-list-thumb">
                                         <h6 class="d-flex">
-                                            Modelowanie
+                                            Strzyżenie damskie od...
                                             <span class="price-list-thumb-divider"></span>
-                                            <strong>60.00 zł</strong>
+                                            <strong>40.00 zł</strong>
                                         </h6>
                                     </div>
 
                                     <div class="price-list-thumb">
                                         <h6 class="d-flex">
-                                            Mycie z modelowaniem
+                                            Modelowanie
                                             <span class="price-list-thumb-divider"></span>
                                             <strong>40.00 zł</strong>
                                         </h6>
@@ -251,25 +310,65 @@
                                         </h6>
                                     </div>
 
+                                    <div class="price-list-thumb">
+                                        <h6 class="d-flex">
+                                            Porstowanie keratynowe
+                                            <span class="price-list-thumb-divider"></span>
+                                            <strong>130.00 zł</strong>
+                                        </h6>
+                                    </div>
+
+                                    <div class="price-list-thumb">
+                                        <h6 class="d-flex">
+                                            Farbowanie
+                                            <span class="price-list-thumb-divider"></span>
+                                            <strong>120.00 zł</strong>
+                                        </h6>
+                                    </div>
+
+                                    <div class="price-list-thumb">
+                                        <h6 class="d-flex">
+                                            Styling
+                                            <span class="price-list-thumb-divider"></span>
+                                            <strong>100.00 zł</strong>
+                                        </h6>
+                                    </div>
+
+                                    <div class="price-list-thumb">
+                                        <h6 class="d-flex">
+                                            Porstowanie keratynowe
+                                            <span class="price-list-thumb-divider"></span>
+                                            <strong>130.00 zł</strong>
+                                        </h6>
+                                    </div>
+
+                                    <div class="price-list-thumb">
+                                        <h6 class="d-flex">
+                                            Farbowanie
+                                            <span class="price-list-thumb-divider"></span>
+                                            <strong>120.00 zł</strong>
+                                        </h6>
+                                    </div>
+
                                     <!-- Dodać cennik do końca-->
 
                                 </div>
                             </div>
 
                             <div class="col-lg-4 col-12 custom-block-bg-overlay-wrap mt-5 mb-5 mb-lg-0 mt-lg-0 pt-3 pt-lg-0">
-                                <img src="images/bg_2_edit.jpg" class="custom-block-bg-overlay-image img-fluid" alt="cennik zdjęcie"> <!-- !!!!!!!! Tutaj dodać jakieś zdjęcie siana czy czegoś związanego z cennikiem !!!!!-->
+                                <img src="images/prizes-image.jpg" class="custom-block-bg-overlay-image img-fluid" alt="cennik zdjęcie"> <!-- !!!!!!!! Tutaj dodać jakieś zdjęcie siana czy czegoś związanego z cennikiem !!!!!-->
                             </div>
                         </div>
                     </div>
                 </section>
 
-                <section class="contact-section" id="section_5">
+                <section class="contact-section" id="section_6">
                     <div class="section-padding section-bg">
-                        <div class="container">
+                        <div class="container"> 
                             <div class="row">
 
                                 <div class="col-lg-8 col-12 mx-auto">
-                                    <h2 class="text-center">
+                                    <h2 class="text-center text-white">
                                         Kontakt
                                     </h2>
                                 </div>
@@ -295,7 +394,7 @@
 
                                     <ul class="social-icon">
                                         <li class="social-icon-item">
-                                            <a href="#" class="social-icon-link bi-facebook"></a>
+                                            <a href="https://www.facebook.com/profile.php?id=100057302805737" class="social-icon-link bi-facebook"></a>
                                         </li>
 
                                         <li class="social-icon-item">
@@ -371,7 +470,32 @@
         <!-- JAVASCRIPT -->
         <script src="js/bootstrap.min.js"></script>
         <script src="js/jquery.min.js"></script>
-        <script src="click-scroll.js"></script>
-        <script src="click-script.js"></script>
+        <script src="js/click-scroll.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/lightbox-plus-jquery.min.js"></script>
+
+
+        <script>
+            ScrollReveal({
+                reset: true,
+                distance: '60px',
+                duration: 2500,
+                delay: 400
+            });
+
+            
+            
+            ScrollReveal().reveal('.main-baner', { delay: 500 });
+            ScrollReveal().reveal('.custom-block', { delay: 500, origin: 'right' });
+            ScrollReveal().reveal('.onas-desc, h2', { delay: 100, origin: 'top' });
+
+            ScrollReveal().reveal('.stylizacje', { delay: 200, origin: 'left' });
+            ScrollReveal().reveal('.two-images', { delay: 200, origin: 'left' });
+
+            ScrollReveal().reveal('.zapraszamy, .opis-zapraszamy, .strong-zapraszamy', { delay: 200, origin: 'bottom' });
+            
+            ScrollReveal().reveal('.services-thumb', { delay: 400, origin: 'bottom' });
+            
+        </script>
 </body>
 </html>
