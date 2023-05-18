@@ -11,15 +11,19 @@
     <meta name="author" content="frontend.mkujawa">
     <meta name="keywords" content="hairsaloon, salon fryzjerski, fryzjer, fryzjer słupca, słupca, monika kujawa, kujawa monika, fryzjer monika, fryzjer monika słupca">
 
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+
 
     <!-- FONT'S -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;500&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&di
+   
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@200;300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+
     
     <!-- CSS/STYLES/LINKS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -37,7 +41,9 @@
 
 </head>
 <body>
-    
+    <div id="preloader"></div>
+
+
     <div class="container-fluid">
         <div class="row">
             <button class="navbar-toggler d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
@@ -118,14 +124,26 @@
                                 <h2 class="mb-4 onas-title">O nas</h2>
 
                                 <div class="border-bottom pb-3 mb-5">
-                                    <p class="onas-desc">Nasz salon jest super i ogólnie to fajnie obcinamy, modelujemy i spełniamy życzenia klienta. Wpadnij do nas a na pewno nie będziesz żałować!</p>
+                                    <p class="onas-desc">
+                                    Salon fryzjerski Volume Effect, odnosi nieustanne sukcesy i cieszy się zasłużoną renomą. To miejsce, gdzie doskonałe fryzury stają się rzeczywistością, a zadowolenie klientów jest najwyższym priorytetem.<br><br>
+
+                                    Od samego początku swojej działalności, salon "Perfekcyjne Strzyżenie" kładzie nacisk na profesjonalizm i dbałość o każdy detal. Właściciele i personel, którzy tworzą tę ekipę, nie tylko wykonują swoje obowiązki z pełnym zaangażowaniem, ale również sumienie dokładają do każdej usługi. Ich pasja do fryzjerstwa widać w każdym cięciu, koloryzacji i stylizacji, które tworzą.<br>    
+
+                                    We wnętrzu salonu Volume Effect panuje przyjemna i relaksująca atmosfera. Elegancki design, stonowane kolory i nowoczesne wyposażenie tworzą idealne otoczenie, w którym klienci mogą odprężyć się i oddać w ręce profesjonalistów. Wszystkie stanowiska fryzjerskie są wygodne i ergonomiczne, zapewniając komfort zarówno dla klientów, jak i fryzjerów. <br><br>
+
+                                    Co wyróżnia ten salon na tle innych, to nie tylko wysoka jakość usług, ale także serdeczna i miła obsługa. Personel salonu to zespół ludzi o szerokim uśmiechu i życzliwym podejściu. Nasze doświadczenie i wiedza pozwalają doradzić klientom i stworzyć fryzurę, która idealnie pasuje do ich stylu i osobowości.<br>
+
+                                    Salon Volume Effect zaprasza zarówno stałych klientów, którzy cenią sobie jakość i doskonałe rezultaty, jak i nowych gości, którzy szukają niezapomnianego doświadczenia fryzjerskiego. Każdy wizytujący może być pewien, że zostanie obsłużony z pełnym profesjonalizmem i troską o jego wygląd.<br><br>
+
+                                    Jeśli szukasz miejsca, gdzie pasja do fryzjerstwa idzie w parze z miłą atmosferą i perfekcyjnym wykonaniem, to salon fryzjerski Volume Effect jest idealnym wyborem. Zapraszamy Cię do odwiedzenia naszego salonu i przekonania się osobiście, jak wiele możemy dla Ciebie zrobić.
+                                    </p>
                                 </div>
                             </div>
 
                             <h6 class="mb-5 stylizacje">Nasze stylizacje</h6>
 
                             <div class="col-lg-5 col-12 custom-block-bg-overlay-wrap me-lg-5 mb-5 mb-lg-0 two-images">
-                                <img src="images/galeria/6.jpg" class="custom-block-bg-overlay-image img-fluid" alt="zdjęcie klient 1">
+                                <img src="images/galeria/img_1.jpg" class="custom-block-bg-overlay-image img-fluid" alt="zdjęcie klient 1">
                             </div>
 
                             <div class="col-lg-5 col-12 custom-block-bg-overlay-wrap mt-4 mt-lg-0 mb-5 mb-lg-0 two-images">
@@ -169,7 +187,7 @@
                                     <img src="images/obcinanie_uslugi.jpg" class="services-image img-fluid" alt="zdjęcie obcinania">
 
                                     <div class="services-info d-flex align-items-end">
-                                        <h4 class="mb-0">Obcinanie</h4>
+                                        <h4 class="mb-0">Strzyżenie</h4>
                                     </div>
                                 </div>
                             </div>
@@ -219,7 +237,7 @@
                                     <img src="images/prostowaniekeratynowe_uslugi.jpg" class="services-image img-fluid" alt="zdjęcie stylizacji">
 
                                     <div class="services-info d-flex align-items-end">
-                                        <h4 class="mb-0">Keratynowe prostowanie</h4>
+                                        <h4 class="mb-0">Prostowanie</h4>
                                     </div>
                                 </div>
                             </div>
@@ -230,37 +248,43 @@
                 </section>
 
 
-                <section class="galery-section section-padding" id="section_4">
+                <section class="galery-section padding-top" id="section_4">
                     <div class="row">
                         <div class="col-lg-12 col-12">
-                            <h2 class="mb-5 text-center">Galeria</h2>
+                            <h2 class="mb-5 text-center galery-title">Galeria</h2>
                         </div>
     
                         <div class="container">
                             <div class="gallery">
-                                <a href="images/galeria/1.jpg" data-lightbox="models" data-title="Caption1">
-                                    <img src="images/galeria/1.jpg">
+                                <a href="images/galeria/galeria-onpage/img_1.jpg" data-lightbox="models" data-title="">
+                                    <img src="images/galeria/galeria-onpage/img_1.jpg" class="imageAnimationTop">
                                 </a>
-                                <a href="images/galeria/2.jpg" data-lightbox="models" data-title="Caption1">
-                                    <img src="images/galeria/2.jpg">
+                                <a href="images/galeria/galeria-onpage/img_6.jpg" data-lightbox="models" data-title="">
+                                    <img src="images/galeria/galeria-onpage/img_6.jpg" class="imageAnimationBottom">
                                 </a>
-                                <a href="images/galeria/3.jpg" data-lightbox="models" data-title="Caption1">
-                                    <img src="images/galeria/3.jpg">
+                                <a href="images/galeria/galeria-onpage/img_3.jpg" data-lightbox="models" data-title="">
+                                    <img src="images/galeria/galeria-onpage/img_3.jpg" class="imageAnimationTop">
                                 </a>
-                                <a href="images/galeria/4.jpg" data-lightbox="models" data-title="Caption1">
-                                    <img src="images/galeria/4.jpg">
+                                <a href="images/galeria/galeria-onpage/img_4.jpg" data-lightbox="models" data-title="">
+                                    <img src="images/galeria/galeria-onpage/img_4.jpg" class="imageAnimationBottom">
                                 </a>
-                                <a href="images/galeria/5.jpg" data-lightbox="models" data-title="Caption1">
-                                    <img src="images/galeria/5.jpg">
+                                <a href="images/galeria/galeria-onpage/img_5.jpg" data-lightbox="models" data-title="">
+                                    <img src="images/galeria/galeria-onpage/img_5.jpg" class="imageAnimationLeft">
                                 </a>
-                                <a href="images/galeria/6.jpg" data-lightbox="models" data-title="Caption1">
-                                    <img src="images/galeria/6.jpg">
+                                <a href="images/galeria/galeria-onpage/img_2.jpg" data-lightbox="models" data-title="">
+                                    <img src="images/galeria/galeria-onpage/img_2.jpg" class="imageAnimationTop">
                                 </a>
-                                <a href="images/galeria/7.jpg" data-lightbox="models" data-title="Caption1">
-                                    <img src="images/galeria/7.jpg">
+                                <a href="images/galeria/galeria-onpage/img_7.jpg" data-lightbox="models" data-title="">
+                                    <img src="images/galeria/galeria-onpage/img_7.jpg" class="imageAnimationRight">
                                 </a>
-                                <a href="images/galeria/8.jpg" data-lightbox="models" data-title="Caption1">
-                                    <img src="images/galeria/8.jpg">
+                                <a href="images/galeria/galeria-onpage/img_8.jpg" data-lightbox="models" data-title="">
+                                    <img src="images/galeria/galeria-onpage/img_8.jpg" class="imageAnimationBottom">
+                                </a>
+                                <a href="images/galeria/galeria-onpage/img_9.jpg" data-lightbox="models" data-title="">
+                                    <img src="images/galeria/galeria-onpage/img_9.jpg" class="imageAnimationBottom">
+                                </a>
+                                <a href="images/galeria/galeria-onpage/img_10.jpg" data-lightbox="models" data-title="">
+                                    <img src="images/galeria/galeria-onpage/img_10.jpg" class="imageAnimationBottom">
                                 </a>
                             </div>   
                         </div>
@@ -275,88 +299,205 @@
                             <div class="col-lg-8 col-12">
                                 <div class="price-list-thumb-wrap">
                                     <div class="mb-4">
-                                        <h2 class="mb-2">Cennik</h2>
+                                        <h2 class="mb-2 prizeTitle">Cennik</h2>
                                     </div>
 
                                     <div class="price-list-thumb">
                                         <h6 class="d-flex">
-                                            Strzyżenie męskie od...
+                                            Konsultacja
+                                            <span class="price-list-thumb-divider"></span>
+                                            <strong>bezpłatnie</strong>
+                                        </h6>
+                                    </div>
+
+                                    <h3 class="price-list-thumb price-service">Strzyżenie damskie:</h3>
+
+                                    <div class="price-list-thumb">
+                                        <h6 class="d-flex">
+                                            Włosy krótkie komplet
+                                            <span class="price-list-thumb-divider"></span>
+                                            <strong>65.00 zł</strong>
+                                        </h6>
+                                    </div>
+
+                                    <div class="price-list-thumb">
+                                        <h6 class="d-flex">
+                                            Włosy długie komplet
+                                            <span class="price-list-thumb-divider"></span>
+                                            <strong>85.00 zł</strong>
+                                        </h6>
+                                    </div>
+
+                                    <div class="price-list-thumb">
+                                        <h6 class="d-flex">
+                                            Strzyżenie grzywki
+                                            <span class="price-list-thumb-divider"></span>
+                                            <strong>20.00 zł</strong>
+                                        </h6>
+                                    </div>
+
+                                    <h3 class="price-list-thumb price-service">Koloryzacja:</h3>
+
+                                    <div class="price-list-thumb">
+                                        <h6 class="d-flex">
+                                            Jednolita lub odrost
+                                            <span class="price-list-thumb-divider"></span>
+                                            <strong>80.00 zł - 100.00 zł</strong>
+                                        </h6>
+                                    </div>
+
+                                    <div class="price-list-thumb">
+                                        <h6 class="d-flex">
+                                            Wielotonowa
+                                            <span class="price-list-thumb-divider"></span>
+                                            <strong>120.00 zł - 170.00 zł</strong>
+                                        </h6>
+                                    </div>
+
+                                    <div class="price-list-thumb">
+                                        <h6 class="d-flex">
+                                            Refleksy, Air touch, Baleyage
+                                            <span class="price-list-thumb-divider"></span>
+                                            <strong>100.00 zł - 250.00 zł</strong>
+                                        </h6>
+                                    </div>
+
+                                    <div class="price-list-thumb">
+                                        <h6 class="d-flex">
+                                            Color touch
+                                            <span class="price-list-thumb-divider"></span>
+                                            <strong>120.00 zł - 200.00 zł</strong>
+                                        </h6>
+                                    </div>
+
+                                    <div class="price-list-thumb">
+                                        <h6 class="d-flex">
+                                            Dekoloryzacja całości
+                                            <span class="price-list-thumb-divider"></span>
+                                            <strong>150.00 zł - 200.00 zł</strong>
+                                        </h6>
+                                    </div>
+
+                                    <div class="price-list-thumb">
+                                        <h6 class="d-flex">
+                                            Tonowanie włosów
+                                            <span class="price-list-thumb-divider"></span>
+                                            <strong>30.00 zł - 60.00 zł</strong>
+                                        </h6>
+                                    </div>
+
+                                    <h3 class="price-list-thumb price-service">Modelowanie:</h3>
+
+                                    <div class="price-list-thumb">
+                                        <h6 class="d-flex">
+                                            Stylizacja włosy krótkie
+                                            <span class="price-list-thumb-divider"></span>
+                                            <strong>50.00 zł</strong>
+                                        </h6>
+                                    </div>
+
+                                    <div class="price-list-thumb">
+                                        <h6 class="d-flex">
+                                            Stylizacja włosy średnie
+                                            <span class="price-list-thumb-divider"></span>
+                                            <strong>60.00 zł</strong>
+                                        </h6>
+                                    </div>
+
+                                    <div class="price-list-thumb">
+                                        <h6 class="d-flex">
+                                            Stylizacja włosy długie/przedłużane
+                                            <span class="price-list-thumb-divider"></span>
+                                            <strong>od 80.00 zł</strong>
+                                        </h6>
+                                    </div>
+
+                                    <h3 class="price-list-thumb price-service">Zabiegi pielęgnacyjne:</h3>
+                                
+                                    <div class="price-list-thumb">
+                                        <h6 class="d-flex">
+                                            Podstawowy - maska + ampułka 35zł
+                                            <span class="price-list-thumb-divider"></span>
+                                            <strong>od 35.00 zł</strong>
+                                        </h6>
+                                    </div>
+
+                                    <div class="price-list-thumb">
+                                        <h6 class="d-flex">
+                                            Laminacja "Artego"
+                                            <span class="price-list-thumb-divider"></span>
+                                            <strong>100.00 zł</strong>
+                                        </h6>
+                                    </div>
+
+                                    <h3 class="price-list-thumb price-service">Styling:</h3>
+                                
+                                    <div class="price-list-thumb">
+                                        <h6 class="d-flex">
+                                            Styling
+                                            <span class="price-list-thumb-divider"></span>
+                                            <strong>od 90.00 zł - 110.00 zł</strong>
+                                        </h6>
+                                    </div>
+
+                                    <h3 class="price-list-thumb price-service">Upięcia/loki/fale:</h3>
+
+                                    <div class="price-list-thumb">
+                                        <h6 class="d-flex">
+                                            Upięcia
+                                            <span class="price-list-thumb-divider"></span>
+                                            <strong>od 80.00 zł - 100.00 zł</strong>
+                                        </h6>
+                                    </div>
+
+                                    <div class="price-list-thumb">
+                                        <h6 class="d-flex">
+                                            Loki
+                                            <span class="price-list-thumb-divider"></span>
+                                            <strong>od 80.00 zł - 100.00 zł</strong>
+                                        </h6>
+                                    </div>
+
+                                    <div class="price-list-thumb">
+                                        <h6 class="d-flex">
+                                            Fale
+                                            <span class="price-list-thumb-divider"></span>
+                                            <strong>od 80.00 zł - 100.00 zł</strong>
+                                        </h6>
+                                    </div>
+
+                                    <h3 class="price-list-thumb price-service">Strzyżenie męskie:</h3>
+                                
+                                    <div class="price-list-thumb">
+                                        <h6 class="d-flex">
+                                            Kompleksowe
+                                            <span class="price-list-thumb-divider"></span>
+                                            <strong>40.00 zł</strong>
+                                        </h6>
+                                    </div>
+
+                                    <div class="price-list-thumb">
+                                        <h6 class="d-flex">
+                                            Podstawowe strzyżenie
+                                            <span class="price-list-thumb-divider"></span>
+                                            <strong>35.00 zł</strong>
+                                        </h6>
+                                    </div>
+
+                                    <div class="price-list-thumb">
+                                        <h6 class="d-flex">
+                                            Strzyżenie zarostu
                                             <span class="price-list-thumb-divider"></span>
                                             <strong>30.00 zł</strong>
                                         </h6>
                                     </div>
-
-                                    <div class="price-list-thumb">
-                                        <h6 class="d-flex">
-                                            Strzyżenie damskie od...
-                                            <span class="price-list-thumb-divider"></span>
-                                            <strong>40.00 zł</strong>
-                                        </h6>
-                                    </div>
-
-                                    <div class="price-list-thumb">
-                                        <h6 class="d-flex">
-                                            Modelowanie
-                                            <span class="price-list-thumb-divider"></span>
-                                            <strong>40.00 zł</strong>
-                                        </h6>
-                                    </div>
-
-                                    <div class="price-list-thumb">
-                                        <h6 class="d-flex">
-                                            Styling
-                                            <span class="price-list-thumb-divider"></span>
-                                            <strong>100.00 zł</strong>
-                                        </h6>
-                                    </div>
-
-                                    <div class="price-list-thumb">
-                                        <h6 class="d-flex">
-                                            Porstowanie keratynowe
-                                            <span class="price-list-thumb-divider"></span>
-                                            <strong>130.00 zł</strong>
-                                        </h6>
-                                    </div>
-
-                                    <div class="price-list-thumb">
-                                        <h6 class="d-flex">
-                                            Farbowanie
-                                            <span class="price-list-thumb-divider"></span>
-                                            <strong>120.00 zł</strong>
-                                        </h6>
-                                    </div>
-
-                                    <div class="price-list-thumb">
-                                        <h6 class="d-flex">
-                                            Styling
-                                            <span class="price-list-thumb-divider"></span>
-                                            <strong>100.00 zł</strong>
-                                        </h6>
-                                    </div>
-
-                                    <div class="price-list-thumb">
-                                        <h6 class="d-flex">
-                                            Porstowanie keratynowe
-                                            <span class="price-list-thumb-divider"></span>
-                                            <strong>130.00 zł</strong>
-                                        </h6>
-                                    </div>
-
-                                    <div class="price-list-thumb">
-                                        <h6 class="d-flex">
-                                            Farbowanie
-                                            <span class="price-list-thumb-divider"></span>
-                                            <strong>120.00 zł</strong>
-                                        </h6>
-                                    </div>
-
                                     <!-- Dodać cennik do końca-->
 
                                 </div>
                             </div>
 
-                            <div class="col-lg-4 col-12 custom-block-bg-overlay-wrap mt-5 mb-5 mb-lg-0 mt-lg-0 pt-3 pt-lg-0">
-                                <img src="images/prizes-image.jpg" class="custom-block-bg-overlay-image img-fluid" alt="cennik zdjęcie"> <!-- !!!!!!!! Tutaj dodać jakieś zdjęcie siana czy czegoś związanego z cennikiem !!!!!-->
+                            <div class="col-lg-4 col-12 custom-block-bg-overlay-wrap mt-5 mb-5 mb-lg-0 mt-lg-0 pt-3 pt-lg-0 price-image-block">
+                                <img src="images/prizes-image.jpg" class="custom-block-bg-overlay-image img-fluid" alt="cennik zdjęcie">
                             </div>
                         </div>
                     </div>
@@ -368,7 +509,7 @@
                             <div class="row">
 
                                 <div class="col-lg-8 col-12 mx-auto">
-                                    <h2 class="text-center text-white">
+                                    <h2 class="text-center text-white kontakt-title">
                                         Kontakt
                                     </h2>
                                 </div>
@@ -380,7 +521,7 @@
                         <div class="container">
                             <div class="row">
 
-                                <div class="col-lg-6 col-12">
+                                <div class="col-lg-6 col-12 contact-box">
                                     <h5 class="mb-3">
                                         <strong>Informacje kontaktowe</strong>
                                     </h5>
@@ -473,12 +614,13 @@
         <script src="js/click-scroll.js"></script>
         <script src="js/script.js"></script>
         <script src="js/lightbox-plus-jquery.min.js"></script>
+        <script src="js/preloader.js"></script>
 
 
         <script>
             ScrollReveal({
                 reset: true,
-                distance: '60px',
+                distance: '80px',
                 duration: 2500,
                 delay: 400
             });
@@ -487,15 +629,43 @@
             
             ScrollReveal().reveal('.main-baner', { delay: 500 });
             ScrollReveal().reveal('.custom-block', { delay: 500, origin: 'right' });
-            ScrollReveal().reveal('.onas-desc, h2', { delay: 100, origin: 'top' });
+
+            ScrollReveal().reveal('.onas-desc, .onas-title, .kontakt-title, .uslugi-title, .galery-title', { delay: 100, origin: 'top' });
 
             ScrollReveal().reveal('.stylizacje', { delay: 200, origin: 'left' });
-            ScrollReveal().reveal('.two-images', { delay: 200, origin: 'left' });
-
+            ScrollReveal().reveal('.two-images', { delay: 300, origin: 'left' });
             ScrollReveal().reveal('.zapraszamy, .opis-zapraszamy, .strong-zapraszamy', { delay: 200, origin: 'bottom' });
             
-            ScrollReveal().reveal('.services-thumb', { delay: 400, origin: 'bottom' });
+            ScrollReveal().reveal('.services-thumb', { delay: 400, origin: 'bottom'});
+
+            ScrollReveal().reveal('.contact-box', { delay: 500, origin: 'bottom' });
+
+            ScrollReveal().reveal('.contact-block-wrap', { delay: 200, origin: 'top'});
+            ScrollReveal().reveal('.contact-block', { delay: 800, origin: 'bottom'});
             
+        </script>
+
+
+        <script>
+            ScrollReveal({
+                reset: false,
+                distance: '80px',
+                duration: 2200,
+                delay: 400
+            });
+
+            ScrollReveal().reveal('.prizeTitle', { delay: 100, origin: 'top'});
+
+            ScrollReveal().reveal('.price-list-thumb', { delay: 500, origin: 'bottom' });
+
+            ScrollReveal().reveal('.price-image-block', { delay: 500, origin: 'right' });
+
+
+            //galery animation
+            ScrollReveal().reveal('.imageAnimationTop', { delay: 300, origin: 'top' });
+            ScrollReveal().reveal('.imageAnimationBottom', { delay: 300, origin: 'bottom' });
+            ScrollReveal().reveal('.imageAnimationLeft', { delay: 300, origin: 'left' });
+            ScrollReveal().reveal('.imageAnimationRight', { delay: 300, origin: 'right', });
         </script>
 </body>
 </html>
