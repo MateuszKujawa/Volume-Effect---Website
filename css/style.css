@@ -52,13 +52,13 @@ body{
 }
 
 ::-webkit-scrollbar-thumb {
-  background-image: linear-gradient(180deg, var(--white-color) 0%, var(--primary-color) 100%);
+  background-image: linear-gradient(180deg, var(--primary-color) -30%, #c58e2e 120%);
   box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px rgba(10, 10, 10, 0.432); 
+  box-shadow: inset 0 0 5px #c58e2e; 
   border-radius: 5px;
 }
 
@@ -74,6 +74,22 @@ body{
   z-index: 10000;
 }
 
+
+/*---------------------------------------
+  ANIMATION IMAGE IN GALLERY
+-----------------------------------------*/
+.hiddenBox{
+  opacity: 0;
+  transition: all 1.5s;
+  filter: blur(1px);
+  transform: translateX(-100%) rotate(-5deg);
+}
+
+.showBox {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0) rotate(0);
+}
 
 
 
@@ -400,6 +416,7 @@ strong {
   letter-spacing: 3px;
   font-weight: var(--font-weight-medium);
   font-size: var(--h1-font-size);
+  text-shadow: 3px 3px 5px var(--dark-color);
 }
 
 .hero-section p{
@@ -432,23 +449,28 @@ strong {
 
 
 .custom-block {
-  border: 10px solid var(--primary-color);
-  border-radius: 100%;
+  background-image: url(../images/blob.svg);
   position: absolute;
   z-index: 2;
-  bottom: -60px;
-  right: -60px;
+  bottom: -70px;
+  right: -120px;
   padding: 50px 90px 50px 50px;
-  width: 360px;
-  height: 360px;
+  width: 400px;
+  height: 400px;
+}
+
+.custom-block strong{
+  color: var(--white-color);
+  text-shadow: 2px 2px 2px var(--dark-color);
 }
 
 .custom-block .custom-btn {
-  background: var(--primary-color);
+  background: var(--primary-color); 
 }
 
 .custom-block .custom-btn:hover {
-  background: var(--secondary-color);
+  background: var(--white-color);
+  color: var(--primary-color);
 }
 
 .custom-block-image {
@@ -822,6 +844,10 @@ strong {
     font-size: 18px;
   }
 
+  #preloader{
+    background-size: 40%;
+  }
+
   .section-padding,
   .hero-section {
     padding: 50px 25px;
@@ -841,8 +867,8 @@ strong {
 
   .navbar-expand-lg .navbar-nav .nav-link {
     padding: 0;
-  }
 
+  }
 
   .gallery{
     display: grid;
@@ -867,6 +893,12 @@ strong {
   }
 }
 
+@media screen and (max-width: 540) {
+  .price-list-thumb h6{
+    font-size: 12px;
+  }
+}
+
 @media screen and (max-width: 480px) {
   h1 {
     font-size: 38px;
@@ -888,6 +920,10 @@ strong {
     font-size: 20px;
   }
 
+  #preloader{
+    background-size: 70%;
+  }
+
   .services-info h4 {
     font-size: 20px;
   }
@@ -901,12 +937,10 @@ strong {
     font-size: 15px;
   }
   
-
 }
 
-@media screen and (max-width: 540) {
-  .price-list-thumb h6{
-    font-size: 12px;
+@media screen and (max-width: 340) {
+  #preloader{
+    background-size: 80%;
   }
 }
-
