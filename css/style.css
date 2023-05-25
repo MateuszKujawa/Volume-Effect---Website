@@ -75,22 +75,6 @@ body{
 }
 
 
-/*---------------------------------------
-  ANIMATION IMAGE IN GALLERY
------------------------------------------*/
-.hiddenBox{
-  opacity: 0;
-  transition: all 1.5s;
-  filter: blur(1px);
-  transform: translateX(-100%) rotate(-5deg);
-}
-
-.showBox {
-  opacity: 1;
-  filter: blur(0);
-  transform: translateX(0) rotate(0);
-}
-
 
 
 /*---------------------------------------
@@ -209,16 +193,7 @@ strong {
 /*---------------------------------------
   CUSTOM BLOCK BACKGROUND OVERLAY               
 -----------------------------------------*/
-.custom-block-bg-overlay-wrap {
-  background: linear-gradient(190deg, var(--white-color) 0%, var(--primary-color) 100%);
-  border-radius: var(--border-radius-medium);
-  transition: all 600ms ease;
-}
 
-.custom-block-bg-overlay-wrap:hover {
-  background: linear-gradient(45deg, var(--white-color) 0%, var(--primary-color) 100%);
-  transform: scale(1.05);
-}
 
 .custom-block-bg-overlay-image {
   border-radius: var(--border-radius-medium);
@@ -227,11 +202,13 @@ strong {
   height: 100%;
   object-fit: cover;
   transform: rotate(5deg);
-  transition: 600ms;
+  transition: 400ms;
+  border: none;
+  outline: none;
 }
 
 .custom-block-bg-overlay-image:hover{
-  transform: rotate(-8deg);
+  transform: rotate(-8deg) scale(1.05);
 }
 
 
@@ -491,7 +468,6 @@ strong {
   ABOUT              
 -----------------------------------------*/
 
-
 .about-section h6 {
   color: var(--secondary-color);
 }
@@ -503,6 +479,21 @@ strong {
 
 .about-section .custom-block-bg-overlay-wrap {
   position: relative;
+}
+
+.about-image{
+  width: 300px;
+  height: 300px;
+}
+
+.about-image img{
+  border-radius: 15px;
+  height: 100%;
+  transition: 300ms ease;
+}
+
+.about-image img:hover{
+  transform: scale(1.1);
 }
 
 
@@ -665,6 +656,7 @@ strong {
   height: 500px;
   width: 300px;
   background: linear-gradient(45deg, var(--primary-color) 50%, #c58e2e 100%);
+  border-radius: 15px;
 }
 
 
@@ -935,6 +927,11 @@ strong {
 
   .price-list-thumb h6{
     font-size: 15px;
+  }
+
+  .about-image{
+    width: 150px;
+    height: 150px;
   }
   
 }
