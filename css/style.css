@@ -900,23 +900,29 @@ strong {
 
 
 @media screen and (max-width: 1000px) {
-  .inside-galery {
+  .inside-galery{
+    display: flex;
     height: 15rem;
+    gap: 1;
+  }
+
+  .inside-galery > div:hover {
+    flex: 4;
   }
 }
 
 @media screen and (max-width: 850px) {
-  .inside-galery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    grid-gap: 10px;
+  .inside-galery{
+    display: flex;
+    height: 10rem;
+    gap: 1;
   }
 
-  .inside-galery > div:hover{
-    scale: 1.3;
+  .inside-galery > div:hover {
+    flex: 5;
   }
-  
 }
+
 
 @media screen and (max-width: 767px) {
   .custom-btn {
