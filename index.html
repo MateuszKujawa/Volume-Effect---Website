@@ -52,7 +52,7 @@
             <nav id="sidebarMenu" class="col-md-4 col-lg-3 d-md-block sidebar collapse p-0">
                 <div class="position-sticky sidebar-sticky d-flex flex-column justify-content-center align-items-center">
                     <a class="navbar-brand" href="index.html">
-                        <img src="images/logo.png" class="logo-image img-fluid" align="">
+                        <img src="images/logo.png" class="logo-image img-fluid" alt="logo">
                     </a>
 
                     <ul class="nav flex-column">
@@ -137,16 +137,23 @@
                                     </p>
                                     
                                     <hr>
-                                    <!--
-                                    <div class="about-image d-flex imageAnimationTop">
-                                        <img src="images/salon-inside-img.jpg" alt="sloon image">
-                                    </div>
-                                    -->
-                                    <div class="inside-galery">
-                                        <div style="background-image: url(/images/salon-inside-img.jpg);"></div>
-                                        <div style="background-image: url(/images/salon-inside-img.jpg);"></div>
-                                        <div style="background-image: url(/images/salon-inside-img.jpg);"></div>
-                                        <div style="background-image: url(/images/salon-inside-img.jpg);"></div>
+                                    
+                                    <!--- Inside saloon galery --->
+                                    <div class="container">
+                                        <div class="gallery">
+                                            <a href="images/inside_galery/1.jpg" data-lightbox="inside-images" data-title="">
+                                                <img src="images/inside_galery/1.jpg" class="inside-image imageAnimationBottom">
+                                            </a>
+                                            <a href="images/inside_galery/2.jpg" data-lightbox="inside-images" data-title="">
+                                                <img src="images/inside_galery/2.jpg" class="inside-image imageAnimationBottom">
+                                            </a>
+                                            <a href="images/inside_galery/3.jpg" data-lightbox="inside-images" data-title="">
+                                                <img src="images/inside_galery/3.jpg" class="inside-image imageAnimationBottom">
+                                            </a>
+                                            <a href="images/inside_galery/4.jpg" data-lightbox="inside-images" data-title="">
+                                                <img src="images/inside_galery/4.jpg" class="inside-image imageAnimationBottom">
+                                            </a>
+                                        </div>   
                                     </div>
 
                                 </div>
@@ -696,5 +703,15 @@
             ScrollReveal().reveal('.imageAnimationLeft', { delay: 300, origin: 'left' });
             ScrollReveal().reveal('.imageAnimationRight', { delay: 300, origin: 'right', });
         </script>
+
+<script>
+    lightbox.option({
+      'resizeDuration': 500,
+      'wrapAround': true,
+      'alwaysShowNavOnTouchDevices': true,
+      'fadeDuration': 500,
+      'fitImagesInViewport': true,
+    });
+</script>
 </body>
 </html>

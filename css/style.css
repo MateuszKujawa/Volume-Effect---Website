@@ -38,7 +38,11 @@
   --font-weight-bold:             700;
 }
 
-html, body{
+html{
+  overflow-y: visible;
+}
+
+body{
   background-color: var(--white-color);
   font-family: var(--body-font-poppins); 
   overflow-y: scroll; overflow-x: hidden;
@@ -497,26 +501,15 @@ strong {
   transform: scale(1.1);
 }
 
-.inside-galery{
-  display: flex;
-  height: 20rem;
-  gap: 1rem;
-}
-.inside-galery > div{
-  flex: 1;
-  border-radius: 1rem;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: auto 100%;
-  transition: all .6s;
-  transition:cubic-bezier(.25, .4, .45, .1.4);
+/* Inside gallery style*/
+
+.inside-image{
+  border-radius: 15px;
 }
 
-.inside-galery > div:hover{
-  flex: 2;
+.inside-image img:hover{
+  transform: scale(1.2);
 }
-
-
 /*---------------------------------------
   FEATURED               
 -----------------------------------------*/
@@ -618,6 +611,8 @@ strong {
 .gallery img{
   width: 100%;
 }
+
+
 
 
 /*---------------------------------------
