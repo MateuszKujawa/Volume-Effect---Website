@@ -1,6 +1,0 @@
-1. Zmiana linku sekcji na banerze do kontaktu (podaje do cennika aktualnie)
-2. responsywnosć preloading'u
-3. Ustawienie animacji żeby nie znikało 
-4. Dodanie linku do boxów z sekcji "Usługi" które scrollują po kliknięciu do cennika (dodanie a href)
-5. Dodanie zamkykania hamburger menu po kliknięciu w link po 1s 
-6. Animacja kafelkowa zdjęć
