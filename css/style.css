@@ -169,7 +169,7 @@ strong {
 }
 
 .section-bg {
-  background-image: url(../images/scissors2.jpg);
+  background-image: url(../images/scissors2.webp);
   background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -381,7 +381,7 @@ strong {
   HERO        
 -----------------------------------------*/
 .hero-section {
-  background-image: url('../images/scissors1.jpg');
+  background-image: url('../images/scissors1.webp');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -514,7 +514,7 @@ strong {
   FEATURED               
 -----------------------------------------*/
 .featured-section {
-  background-image: url('../images/bg_2_edit.jpg');
+  background-image: url('../images/bg-2-edit.webp');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -621,7 +621,7 @@ strong {
 .price-list-section {
   padding-top: 100px;
   padding-bottom: 100px;
-  background-image: url(../images/price-background-scroll.jpg);
+  background-image: url(../images/price-background-scroll.webp);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
