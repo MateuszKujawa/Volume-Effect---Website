@@ -201,22 +201,35 @@ strong {
 
 
 .custom-block-bg-overlay-image {
-  border-radius: var(--border-radius-medium);
   display: block;
   margin: auto;
   height: 100%;
   object-fit: cover;
-  transform: rotate(5deg);
   transition: 400ms;
-  border: none;
   outline: none;
 }
 
-.custom-block-bg-overlay-image:hover{
-  transform: rotate(-8deg) scale(1.05);
+.left-img{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 200px;
+  border-bottom-left-radius: 200px;
+  border-bottom-right-radius: 5px;
+  transform: rotate(-5deg);
+  -webkit-box-shadow: -18px 16px 36px -10px rgba(66, 68, 90, 1);
+  -moz-box-shadow: -18px 16px 36px -10px rgba(66, 68, 90, 1);
+  box-shadow: -18px 16px 36px -10px rgba(66, 68, 90, 1);
 }
 
-
+.right-img{
+  border-top-left-radius: 200px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 200px;
+  transform: rotate(8deg);
+  -webkit-box-shadow: 13px 13px 36px -10px rgb(0, 0, 0);
+  -moz-box-shadow: 13px 13px 36px -10px rgb(0, 0, 0);
+  box-shadow: 13px 13px 36px -10px rgb(0, 0, 0);
+}
 
 /*---------------------------------------
   CUSTOM BUTTON               
@@ -486,30 +499,7 @@ strong {
   position: relative;
 }
 
-.about-image{
-  width: 300px;
-  height: 300px;
-}
 
-.about-image img{
-  border-radius: 15px;
-  height: 100%;
-  transition: 300ms ease;
-}
-
-.about-image img:hover{
-  transform: scale(1.1);
-}
-
-/* Inside gallery style*/
-
-.inside-image{
-  border-radius: 15px;
-}
-
-.inside-image img:hover{
-  transform: scale(1.2);
-}
 /*---------------------------------------
   FEATURED               
 -----------------------------------------*/
