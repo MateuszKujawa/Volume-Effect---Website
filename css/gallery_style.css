@@ -47,8 +47,6 @@
   body{
     background-color: var(--white-color);
     font-family: var(--body-font-poppins); 
-    overflow-y: scroll; overflow-x: hidden;
-    max-width: 100%;
   }
 
   *{
@@ -364,3 +362,141 @@
     top: 8px;
   }
   
+
+  /*---------------------------------------
+  HERO        
+-----------------------------------------*/
+
+.container-fluid{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-section {
+  background-image: url('../images/galery-hero-bg.webp');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  padding: 50px;
+  min-height: 665px;
+  width: 100%;
+}
+
+.hero-section h1{
+  font-family: var(--body-font-poppins);
+  letter-spacing: 3px;
+  font-weight: var(--font-weight-medium);
+  font-size: var(--h1-font-size);
+  text-shadow: 3px 3px 5px var(--dark-color);
+}
+
+.hero-section h2{
+  font-family: var(--body-font-poppins);
+  letter-spacing: 3px;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--h2-font-size);
+  text-shadow: 3px 3px 5px var(--dark-color);
+  border-bottom: 3px solid var(--white-color);
+  padding-bottom: 30px;
+}
+
+.hero-section p{
+  font-size: var(--h5-font-size);
+}
+
+@media screen and (min-width: 991px) {
+  .hero-section {
+    height: calc(100vh - 0px);
+  }
+
+}
+
+.hero-section::after {
+  content: "";
+  background: linear-gradient(90deg, #0f0f0fd7 0%, #160a2962 100%);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.65;
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+}
+.hero-row{
+  position: relative;
+  top: -80px;
+}
+
+.galery-nav ul{
+  width: 100%;
+  position: relative;
+  left: -35px;
+  top: 10px;
+}
+
+.galery-nav ul li{
+  position: relative;
+  display: inline-block;
+  list-style-type: none;
+}
+
+.galery-nav a{
+  color: var(--white-color);
+  font-size: 22px;
+  padding: 10px 20px;
+  text-shadow: 2px 2px 3px black;
+}
+
+
+.galery-nav ul li a{
+  transition: all 0.5s ease;
+  display: block;
+}
+.galery-nav ul li a:hover{
+  transform: scale(0.9);
+}
+.galery-nav ul li a:hover:before{
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.galery-nav ul li a:before{
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  bottom: 0;
+  left: 25%;
+  background: white;
+  visibility: hidden;
+  transform: scaleX(0);
+	transition: all 0.3s ease-in-out 0s;
+}
+
+
+
+
+  /* Gallery site style */
+  .row{
+    padding: 30px;
+    margin-top: 30px;
+  }
+
+  .galery-title-h1{
+    font-size: var(--h2-font-size);
+    border-bottom: 2px solid var(--primary-color);
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 15px;
+    position: relative;
+    top: 30px;
+  }
