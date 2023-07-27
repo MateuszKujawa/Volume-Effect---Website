@@ -624,69 +624,22 @@ strong {
   margin: 0 auto;
   margin-bottom: 50px;
   width: 230px;
-  height: 60px;
   font-size: 23px;
-  background: transparent;
+  background: var(--primary-color);
   border: none;
   color: #fff;
-  cursor: pointer;
+  border-radius: 15px;
   z-index: 1;
-  padding: 10px 20px;
-  white-space: nowrap;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
+  padding: 12px 10px;
   letter-spacing: 1.3px;
+  transition: background-color .3s ease, transform .3s ease;
+  font-weight: 500;
 }
 
-
-.button-86::after,
-.button-86::before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: -99999;
-  transition: all .4s;
+.button-86:hover{
+  transform: scale(0.9);
+  background-color: #9c2323;
 }
-
-.button-86::before {
-  transform: translate(0%, 0%);
-  width: 100%;
-  height: 100%;
-  background: var(--primary-color);
-  border-radius: 10px;
-}
-
-.button-86::after {
-  transform: translate(30px, 30px);
-  width: 35px;
-  height: 35px;
-  background: #ffffff15;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border-radius: 50px;
-}
-
-.button-86:hover::before {
-  transform: translate(5%, 20%);
-  width: 110%;
-  height: 110%;
-  background: var(--secondary-color);
-}
-
-.button-86:hover::after {
-  border-radius: 10px;
-  transform: translate(0, 0);
-  width: 100%;
-  height: 100%;
-}
-
-.button-86:active::after {
-  transition: 0s;
-  transform: translate(0, 5%);
-}
-
 
 
 
