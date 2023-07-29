@@ -1,6 +1,6 @@
 const navigationSection = document.querySelector('.galery-nav');
 const sectionsToToggle = document.querySelectorAll('[id^="section"]');
-
+const footerSection = document.querySelector('.site-footer');
 
 navigationSection.addEventListener('click', (event) => {
     if (event.target.tagName === 'A') {

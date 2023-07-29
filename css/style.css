@@ -39,7 +39,6 @@
 }
 
 html{
-  overflow-y: visible;
   max-width: 100%;
   overflow-x: hidden;
 }
@@ -47,7 +46,6 @@ html{
 body{
   background-color: var(--white-color);
   font-family: var(--body-font-poppins); 
-  overflow-y: scroll; overflow-x: hidden;
   max-width: 100%;
 }
 
@@ -1157,5 +1155,12 @@ strong {
 @media screen and (max-width: 340) {
   #preloader{
     background-size: 80%;
+  }
+}
+
+@media screen and (max-width: 766px) {
+  body{
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
 }
