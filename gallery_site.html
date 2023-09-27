@@ -362,26 +362,17 @@
             <section id="section2" style="display: none;">
                 <h1 class="galery-title-h1">Metamorfozy</h1>
                 
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                            <div class="container-general wrap-effect-4">
-                                <div class="gallery-wrap">
-                                    <div class="item">
-                                        <div class="item-title">
-                                            <h2>Przed</h2>
-                                        </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="item-title">
-                                            <h2>Po</h2>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="slider">
+                    <two-up>
+                        <div class="first-wrapper">
+                            <img src="./galery_site_images/metamorfosion/m1/m3.webp" alt="zdjęcie metamorfozy fryzury przed">
                         </div>
-                    </div>
+                        <div class="second-wrapper">
+                            <img src="./galery_site_images/metamorfosion/m1/m1.webp" alt="zdjęcie metamorfozy fryzury po">
+                        </div>
+                    </two-up>
                 </div>
+                
 
             </section>
 
@@ -627,6 +618,7 @@
 
     </div>
 
+    <script src="https://unpkg.com/two-up-element@1"></script>
     <script src="js/lightbox-plus-jquery.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
